@@ -65,7 +65,7 @@ const HeroSlider = () => {
               Ruhuna Science <br />
               <span className="block mt-4">Research Circle</span>
             </h1>
-            <p className="my-4 w-[30%]">
+            <p className="my-4 w-[30%] text-lg">
               A nonprofit organization with a strong research base across a
               spectrum of academic disciplines engaging in research at national
               and international levels.
