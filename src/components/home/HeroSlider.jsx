@@ -39,7 +39,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="max-w-full mx-auto relative h-[600px] mb-20 ">
+    <div className="max-w-full mx-auto relative h-[500px] md:h-[600px] mb-20 ">
       <div className="relative h-full overflow-hidden">
         <div className="absolute inset-0">
           {slides?.map((slide, index) => (
@@ -65,7 +65,7 @@ const HeroSlider = () => {
               Ruhuna Science <br />
               <span className="block mt-4">Research Circle</span>
             </h1>
-            <p className="my-4 w-[30%] text-lg">
+            <p className="my-4 w-full md:w-[30%] text-lg">
               A nonprofit organization with a strong research base across a
               spectrum of academic disciplines engaging in research at national
               and international levels.
