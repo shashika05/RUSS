@@ -1,5 +1,9 @@
-export default function Home(){
-    return(
-        <div>Home</div>
-    )
+import HeroSlider from "./HeroSlider";
+
+export default function Home() {
+  return (
+    <div>
+      <HeroSlider />
+    </div>
+  );
 }
