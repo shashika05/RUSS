@@ -41,8 +41,6 @@ export default function NavBar() {
                               className='hover:text-[#DD5757] focus:text-[#DD5757] text-white'>Gallery</Link>
                         <Link to='/Team'
                               className='hover:text-[#DD5757] focus:text-[#DD5757] text-white'>Team</Link>
-                        <Link to='/Login'
-                              className='hover:text-[#DD5757] focus:text-[#DD5757] text-white font-bold'>Login</Link>
                     </div>
                 </div>
             </nav>
@@ -88,14 +86,6 @@ export default function NavBar() {
                                 onClick={iconClickEvent}
                             >
                                 Team
-                            </Link>
-                            <Link
-                                to="/Login"
-                                className="mx-2 mb-1 text-center hover:text-[#DD5757] focus:text-[#DD5757]
-                                text-white font-bold"
-                                onClick={iconClickEvent}
-                            >
-                                Login
                             </Link>
                         </div>
                     </div>
