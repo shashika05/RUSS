@@ -1,5 +1,8 @@
 import React from "react";
 
+import img1 from "/src/assets/hero-bg-2.jpg";
+import img2 from "/src/assets/hero-bg-3.jpg";
+
 const PastSymp = () => {
   return (
     <div className="max-w-7xl mx-auto px-2">
@@ -29,7 +32,7 @@ const PastSymp = () => {
         <div className="flex flex-row gap-4 md:gap-10 mt-6 mb-14">
           <div className=" w-full h-full ">
             <img
-              src={`/src/assets/hero-bg-3.jpg`}
+              src={img1}
               alt={`Slide x + 1}`}
               className="object-cover rounded-2xl"
             />
@@ -37,7 +40,7 @@ const PastSymp = () => {
 
           <div className=" w-full h-full">
             <img
-              src={`/src/assets/hero-bg-2.jpg`}
+              src={img2}
               alt={`Slide x + 1}`}
               className="object-cover rounded-2xl"
             />
