@@ -52,7 +52,7 @@ const RecentProject = () => {
         </p>
         <a
           href="https://www.sci.ruh.ac.lk/rusrec/symposia/riures22.html"
-          className="text-textcolor underline"
+          className="text-textcolor border-b-2 border-[#6D2C95] hover:text-[#6D2C95] hover:border-b-4 transition-all duration-300 ease-in-out"
         >
           Click here to read more about the symposium.
         </a>
