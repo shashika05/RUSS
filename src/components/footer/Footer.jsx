@@ -1,14 +1,17 @@
 export default function Footer() {
     return (
         <div>
-            <div className="w-full h-auto md:flex bg-white">
+            <div className="flex justify-center">
+                <hr className="w-5/6 h-[3px] bg-[#6D2C95]"/>
+            </div>
+            <div className="w-full h-auto md:flex">
                 <div className="md:w-1/2 m-5">
                     <div className="w-auto h-auto flex flex-col items-center">
                         <div className="flex gap-1">
                             <img className="w-16 h-16" src="src/assets/RUHREClogo.png" alt="RUREClogo"/>
-                            <h1 className="text-6xl font-bold">RUSREC</h1>
+                            <h1 className="text-6xl font-bold text-[#6D2C95]">RUSREC</h1>
                         </div>
-                        <div className="flex flex-col gap-2 my-5">
+                        <div className="flex flex-col gap-2 my-5 text-[#333333]">
                             <div>
                                 <p className="text-lg">Please send us your ideas or suggestions! Any feedback would be
                                     appreciated.</p>
@@ -19,6 +22,7 @@ export default function Footer() {
                                     Srilanka 81000</p>
                             </div>
                             <div className="flex items-center">
+
                                 <img className="w-6 h-6" src="src/assets/mail_icon.png" alt="icon"/>
                                 <a target="_blank" href="rusrecscifac@gmail.com"
                                    className="text-lg underline">rusrecscifac@gmail.com</a>
@@ -37,7 +41,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="md:w-1/2 flex m-5 md:border-l-[3px] md:border-[#D9D9D9]">
+                <div className="md:w-1/2 flex m-5 md:border-l-[3px] md:border-[#6D2C95] text-[#333333]">
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col gap-1">
                             <h3 className="text-lg font-bold mb-2">Quick Links</h3>
@@ -50,7 +54,7 @@ export default function Footer() {
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col gap-1">
                             <h3 className="text-lg font-bold mb-2">Popular Links</h3>
-                            <a target="_blank" href="https://www.ruh.ac.lk/index.php/en/">University of Ruhuna</a>
+                            <a target="_blank" href="https://www.ruh.ac.lk/index.php/en/ ">University of Ruhuna</a>
                             <a target="_blank" href="https://alpha.ruh.ac.lk/FacultyofScience/">Faculty of Science,
                                 UOR</a>
                             <a target="_blank" href="https://www.lib.ruh.ac.lk/">UOR Library</a>
@@ -59,8 +63,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#D9D9D9] p-3">
-                <p className="text-center">
+            <div className="bg-slate-400 p-2">
+                <p className="text-center text-[#333333]">
                     &copy;Copyright <b>2024-2033 RUSREC</b> - All Right Reserved
                 </p>
             </div>

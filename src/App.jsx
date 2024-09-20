@@ -6,7 +6,6 @@ import Home from "./components/home/Home.jsx";
 import Symposia from "./components/symposia/Symposia.jsx";
 import Gallery from "./components/gallery/Gallery.jsx";
 import Team from "./components/team/Team.jsx";
-import Login from "./components/login/Login.jsx";
 import NotFound from "./components/notfound/NotFound.jsx";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
                     <Route path="/Symposia" element={<Symposia/>}/>
                     <Route path="/Gallery" element={<Gallery/>}/>
                     <Route path="/Team" element={<Team/>}/>
-                    <Route path="/Login" element={<Login/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>
