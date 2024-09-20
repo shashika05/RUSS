@@ -1,5 +1,3 @@
-import React from "react";
-
 import img1 from "/src/assets/hero-bg-2.jpg";
 import img2 from "/src/assets/hero-bg-3.jpg";
 
@@ -29,7 +27,7 @@ const PastSymp = () => {
         >
           See All Past Symposium
         </a>
-        <div className="flex flex-row gap-4 md:gap-10 mt-6 mb-14">
+        <div className="flex flex-row gap-4 md:gap-10 mt-6 mb-24">
           <div className=" w-full h-full ">
             <img
               src={img1}
