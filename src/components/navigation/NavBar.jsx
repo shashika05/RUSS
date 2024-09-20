@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { Dialog, DialogPanel } from "@headlessui/react";
+import logo from "../../assets/RUHREClogo.png";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,11 +18,7 @@ export default function NavBar() {
         <div className="flex justify-between mx-5">
           <div className="content-center p-2">
             <NavLink to="/" className="flex items-center">
-              <img
-                className="h-8 md:h-12"
-                src="src/assets/RUHREClogo.png"
-                alt=""
-              />
+              <img className="h-8 md:h-12" src={logo} alt="" />
               <p className="text-2xl md:text-4xl font-bold text-[#6D2C95]">
                 RUSREC
               </p>
