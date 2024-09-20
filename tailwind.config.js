@@ -6,6 +6,7 @@ export default {
       colors: {
         buttonbg: "#6D2C95",
         buttonhover: "#A062C4",
+        textcolor: "#666666",
       },
     },
   },
