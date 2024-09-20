@@ -3,6 +3,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FiYoutube } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+import logo from "../../assets/RUHREClogo.png";
 
 export default function Footer() {
   return (
@@ -14,11 +15,7 @@ export default function Footer() {
         <div className="md:w-1/2 m-5">
           <div className="w-auto h-auto flex flex-col items-center">
             <div className="flex gap-1">
-              <img
-                className="w-16 h-16"
-                src="src/assets/RUHREClogo.png"
-                alt="RUREClogo"
-              />
+              <img className="w-16 h-16" src={logo} alt="RUREClogo" />
               <h1 className="text-6xl font-bold text-[#6D2C95]">RUSREC</h1>
             </div>
             <div className="flex flex-col gap-2 my-5 text-[#333333]">
