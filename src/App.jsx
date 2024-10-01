@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Footer from "./components/footer/Footer.jsx";
 import NavBar from "./components/navigation/NavBar.jsx";
 import Home from "./components/home/Home.jsx";
@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div>
-            <div>
+            <div className="sticky top-0 z-50">
                 <NavBar/>
             </div>
             <div>
