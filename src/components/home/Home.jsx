@@ -1,13 +1,12 @@
 import HeroSlider from "./HeroSlider";
 import PastSymp from "./PastSymp";
 import RecentProject from "./RecentProject";
-import Timeline from "./Timeline";
+import Timeline from "./TimeLine";
 
 import procdeeding from "../../assets/proceeding.png";
 import yt from "../../assets/yt.png";
 import album from "../../assets/album.png";
 import ProjectCard from "./ProjectCard";
-
 
 const Projects = [
   {
@@ -41,7 +40,7 @@ export default function Home() {
     <div>
       <HeroSlider />
       <PastSymp />
-      <Timeline/>
+      <Timeline />
       <RecentProject />
       <div className="grid sm:grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-32 mb-24 ">
         {Projects.map((project, index) => (
