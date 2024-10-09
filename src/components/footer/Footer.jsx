@@ -96,7 +96,12 @@ export default function Footer() {
             </div>
             <div className="bg-slate-400 p-2">
                 <p className="text-center text-[#333333]">
-                    &copy;Copyright <b>2024-2033 RUSREC</b> - All Right Reserved
+                    &copy;Copyright <b>2024-2033 RUSREC</b> - All Rights Reserved <span>
+                    <a target="_blank" href="#" >
+                        ZyKode
+                    </a>
+                </span>
+
                 </p>
             </div>
         </div>
