@@ -13,8 +13,8 @@ const About = () => {
         </h1>
         <p className="text-textcolor">
           RUSS 2025 is organized by the Faculty of Science, University of
-          Ruhuna. RUSS 2025 aims to provide a premier multidisciplinary forum
-          for undergraduate researchers to present their research findings,
+          Ruhuna. This aims to provide a premier multidisciplinary forum for
+          undergraduate researchers to present their research findings,
           innovations, practical challenges encountered and the solutions
           adopted in the fields of Science & Technology.
         </p>

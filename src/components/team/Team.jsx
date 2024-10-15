@@ -8,8 +8,12 @@ import "swiper/css/navigation";
 import { FaUserLarge } from "react-icons/fa6";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 
+//animations
+import LazyShow from "../animations/LazyShow";
+
 const Team = () => {
-  document.title = "RUSS -2025 | Team";
+  document.title = "RUSS 2025 | Team";
+  window.scrollTo(0, 0);
   const committeeMembers = [
     {
       role: "Chairperson",
@@ -137,104 +141,112 @@ const Team = () => {
       <h1 className="text-4xl font-bold mb-4 text-center">Meet the Team</h1>
 
       {/* Committee Members Section */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Committee Members</h2>
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            900: { slidesPerView: 4 },
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          scrollbar={{ draggable: true }}
-        >
-          {renderCards(committeeMembers)}
-        </Swiper>
-      </section>
+      <LazyShow>
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Committee Members</h2>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Keyboard, Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+          >
+            {renderCards(committeeMembers)}
+          </Swiper>
+        </section>
+      </LazyShow>
 
       {/* Advisory Board Section */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Advisory Board</h2>
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            900: { slidesPerView: 4 },
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          scrollbar={{ draggable: true }}
-        >
-          {renderCards(advisoryBoard)}
-        </Swiper>
-      </section>
+      <LazyShow>
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Advisory Board</h2>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Keyboard, Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+          >
+            {renderCards(advisoryBoard)}
+          </Swiper>
+        </section>
+      </LazyShow>
 
       {/* Editorial Board Section */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Editorial Board</h2>
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            900: { slidesPerView: 4 },
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          scrollbar={{ draggable: true }}
-        >
-          {renderCards(editorialBoard)}
-        </Swiper>
-      </section>
+      <LazyShow>
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Editorial Board</h2>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Keyboard, Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+          >
+            {renderCards(editorialBoard)}
+          </Swiper>
+        </section>
+      </LazyShow>
 
       {/* Contact Details Section */}
-      <section id="contact-info" className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Contact Details</h2>
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            900: { slidesPerView: 4 },
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          scrollbar={{ draggable: true }}
-        >
-          {renderCards(contactDetails)}
-        </Swiper>
-      </section>
+      <LazyShow>
+        <section id="contact-info" className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Contact Details</h2>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Keyboard, Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+          >
+            {renderCards(contactDetails)}
+          </Swiper>
+        </section>
+      </LazyShow>
     </div>
   );
 };

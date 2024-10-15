@@ -3,6 +3,8 @@ import { TbFaceIdError } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
+  document.title = "RUSS 2025 | Not Found";
+  window.scrollTo(0, 0);
   return (
     <div className="bg-background mt-16 text-foreground flex flex-col items-center justify-center">
       <div className="mb-28 animate-bounce flex flex-col items-center">

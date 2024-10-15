@@ -8,6 +8,8 @@ import Timeline from "./TimeLine";
 import LazyShow from "../animations/LazyShow";
 
 export default function Home() {
+  document.title = "RUSS 2025 | Home";
+  window.scrollTo(0, 0);
   return (
     <div>
       <HeroSlider />

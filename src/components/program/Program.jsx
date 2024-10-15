@@ -4,6 +4,8 @@ import { IoIosCall } from "react-icons/io";
 import LazyShow from "../animations/LazyShow";
 
 const Program = () => {
+  document.title = "RUSS 2025 | Programme";
+  window.scrollTo(0, 0);
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-indigo-100 text-gray-800">
       {/* Header Section */}
