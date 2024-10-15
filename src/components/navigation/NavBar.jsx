@@ -46,10 +46,10 @@ const Menu = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="/" className="flex flex-row items-center">
+                <Link to="/" className="flex flex-row items-center">
                   <img alt="logo" className="w-11 h-auto" src={event.logo1} />
                   <img alt="logo" className="w-16 h-auto" src={event.logo2} />
-                </a>
+                </Link>
                 <div className="-mr-2 flex items-center md:hidden">
                   <PopoverButton
                     className={`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-[#6D2C95] hover:underline hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#6D2C95]`}
@@ -106,10 +106,10 @@ const Menu = () => {
               className={`rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden`}
             >
               <div className="px-5 pt-4 flex items-center justify-between">
-                <a href="/" className="flex flex-row items-center">
+                <Link to="/" className="flex flex-row items-center">
                   <img alt="logo" className="w-11 h-auto" src={event.logo1} />
                   <img alt="logo" className="w-16 h-auto" src={event.logo2} />
-                </a>
+                </Link>
                 <div className="-mr-2">
                   <PopoverButton
                     className={`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-[#6D2C95] hover:underline hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#6D2C95]`}
@@ -130,12 +130,13 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+              <Link
+                key={callToAction.name}
+                to={callToAction.href}
+                className="block px-3 py-2 bg-[#6d2c95] rounded-b-md text-center font-medium text-white hover:bg-[#6d2c95]/80"
               >
                 {callToAction.name}
-              </a>
+              </Link>
             </div>
           </PopoverPanel>
         </Transition>

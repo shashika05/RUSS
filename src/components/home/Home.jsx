@@ -8,7 +8,6 @@ import Timeline from "./TimeLine";
 import LazyShow from "../animations/LazyShow";
 
 export default function Home() {
-  // document.getElementById("ToolbarWrapper-sc-cif21b-6").
   return (
     <div>
       <HeroSlider />

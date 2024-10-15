@@ -8,6 +8,7 @@ import img1 from "../../assets/hero-bg-1.jpg";
 import img2 from "../../assets/hero-bg-2.jpg";
 import img3 from "../../assets/hero-bg-3.jpg";
 import img4 from "../../assets/hero-bg-4.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSlider = () => {
   const slides = [
@@ -67,26 +68,26 @@ const HeroSlider = () => {
               <span className="block mt-4">Science Symposium</span>
             </h1>
             <p className="my-4 w-full md:w-[30%] text-lg">
-              "Researches for shaping the future""
+              "Researches for shaping the future"
             </p>
 
             <div className="flex flex-row items-center">
-              <SlCalender /> <p className="ml-2"> Date: 21st January 2025</p>
+              <SlCalender /> <p className="ml-2"> Date: 23st January 2025</p>
             </div>
-            <div className="flex flex-row items-center">
-              <IoLocationOutline />{" "}
+            <div className="flex flex-row">
+              <IoLocationOutline className="mt-1" />{" "}
               <p className="ml-2">
                 {" "}
                 Location: Faculty of Science, University of Ruhuna
               </p>
             </div>
-            <a
-              href="/contact-us"
+            <Link
+              to="/programme"
               className="bg-buttonbg flex items-center gap-1 hover:gap-4 uppercase text-white hover:text-black py-2 px-8 rounded-lg hover:bg-buttonhover transition-all duration-300 mt-4"
             >
-              calling for abstracts
+              Calling For Abstracts
               <IoIosArrowForward className="text-button-text text-xl  " />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
-import { CiLocationOn } from "react-icons/ci";
+import React from "react";
+import { Link } from "react-router-dom";
+
 import { MdOutlineMail, MdLocationPin } from "react-icons/md";
 import { FiYoutube } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
@@ -73,10 +75,10 @@ export default function Footer() {
           <div className="w-1/2 flex justify-center">
             <div className="flex flex-col gap-1 text-sm">
               <h3 className="font-bold mb-2">Quick Links</h3>
-              <a href="">Home</a>
-              <a href="">Symposium</a>
-              <a href="/team#contact-info">Contact Us</a>
-              <a href="">Meet The Team</a>
+              <Link to="/">Home</Link>
+              <Link to="/programme">Symposium</Link>
+              <Link to="/team#contact-info">Contact Us</Link>
+              <Link to="/downloads">Downloads</Link>
             </div>
           </div>
           <div className="w-1/2 flex justify-center">
