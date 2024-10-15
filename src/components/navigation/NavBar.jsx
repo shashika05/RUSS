@@ -20,7 +20,7 @@ const config = {
   },
   navigation: [
     { name: "Home", href: "/" },
-    { name: "Program", href: "/program" },
+    { name: "Programme", href: "/programme" },
     { name: "Author Instructions", href: "/author-instructions" },
     { name: "Team", href: "/team" },
   ],
@@ -80,7 +80,7 @@ const Menu = () => {
                 to={callToAction.href}
                 className={
                   isActive(callToAction.href) +
-                  " font-medium hover:text-[#6D2C95] hover:underline"
+                  " hover:underline bg-[#6D2C95] text-white px-3 py-2 rounded-md text-sm font-medium"
                 }
               >
                 {callToAction.name}
