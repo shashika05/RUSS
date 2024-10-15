@@ -24,7 +24,7 @@ const config = {
     { name: "Author Instructions", href: "/author-instructions" },
     { name: "Team", href: "/team" },
   ],
-  callToAction: { text: "Downloads", href: "/downloads" },
+  callToAction: { text: "Downloads", href: "/d-load" },
 };
 
 const Menu = () => {
