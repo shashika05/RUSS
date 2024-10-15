@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <div>
       <HeroSlider />
-      <LazyShow duration={1}>
+      <LazyShow>
         <PastSymp />
       </LazyShow>
-      <LazyShow duration={1}>
+      <LazyShow>
         <Timeline />
       </LazyShow>
     </div>

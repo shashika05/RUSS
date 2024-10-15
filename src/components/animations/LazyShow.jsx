@@ -37,7 +37,7 @@ const LazyShow = ({ children, duration }) => {
         x: 0,
         opacity: 1,
         transition: {
-          duration: duration,
+          duration: 1,
           ease: "easeOut",
         },
       });
