@@ -24,7 +24,7 @@ function App() {
           <Route path="/program" element={<Program />} />
           <Route path="/author-instructions" element={<Instructions />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/d-load" element={<Downloads />} />
+          <Route path="/downloads" element={<Downloads />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

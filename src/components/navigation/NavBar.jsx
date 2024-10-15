@@ -24,7 +24,7 @@ const config = {
     { name: "Author Instructions", href: "/author-instructions" },
     { name: "Team", href: "/team" },
   ],
-  callToAction: { text: "Downloads", href: "/d-load" },
+  callToAction: { name: "Downloads", href: "/downloads" },
 };
 
 const Menu = () => {
@@ -74,15 +74,17 @@ const Menu = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href={callToAction.href}
+              <Link
+                id="nav-links"
+                key={callToAction.name}
+                to={callToAction.href}
                 className={
-                  isActive("/downloads") +
-                  ` font-medium bg-[#6D2C95] p-2 rounded-lg text-white hover:underline`
+                  isActive(callToAction.href) +
+                  " font-medium hover:text-[#6D2C95] hover:underline"
                 }
               >
-                {callToAction.text}
-              </a>
+                {callToAction.name}
+              </Link>
             </div>
           </nav>
         </div>
@@ -132,7 +134,7 @@ const Menu = () => {
                 href={callToAction.href}
                 className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
-                {callToAction.text}
+                {callToAction.name}
               </a>
             </div>
           </PopoverPanel>
