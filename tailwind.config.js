@@ -9,6 +9,9 @@ export default {
         textcolor: "#666666",
       },
     },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
   },
   plugins: [],
 };

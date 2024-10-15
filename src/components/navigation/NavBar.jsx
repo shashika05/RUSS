@@ -1,145 +1,145 @@
-// eslint-disable-next-line no-unused-vars
-import React, {useState} from "react";
-import {Link, NavLink} from "react-router-dom";
-import {Bars3Icon, XMarkIcon} from "@heroicons/react/16/solid";
-import {Dialog, DialogPanel} from "@headlessui/react";
-import logo from "../../assets/RUHREClogo.png";
+import React, { Fragment } from "react";
 
-export default function NavBar() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+import {
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  Transition,
+} from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link, useLocation } from "react-router-dom";
 
-    const iconClickEvent = () => {
-        setMobileMenuOpen(false);
-    };
+import logo1 from "../../assets/logo-only.png";
+import logo2 from "../../assets/logo-text-only.png";
 
-    return (
-        <div>
-            <nav className="h-auto w-full bg-white">
-                <div className="flex justify-between mx-5">
-                    <div className="content-center p-2">
-                        <NavLink to="/" className="flex items-center"
-                                 onClick={() => window.scrollTo(0, 0)}>
-                            <img className="h-8 md:h-12" src={logo} alt=""/>
-                            <p className="text-2xl md:text-4xl font-bold text-[#6D2C95]">
-                                RUSREC
-                            </p>
-                        </NavLink>
-                    </div>
-                    <div className="flex lg:hidden justify-end p-3">
-                        <button
-                            type="button"
-                            className="-m-2 inline-flex items-center justify-center rounded-md p-2.5"
-                            onClick={() => setMobileMenuOpen(true)}
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            <Bars3Icon
-                                className="h-6 w-6 text-[#333333] hover:text-[#6D2C95]"
-                                aria-hidden="true"
-                            />
-                        </button>
-                    </div>
-                    <div className="hidden p-5 gap-5 lg:flex">
-                        <Link
-                            to="/"
-                            className="hover:text-[#6D2C95] focus:text-[#6D2C95] text-[#333333] font-bold"
-                            onClick={() => window.scrollTo(0, 0)}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/Symposia"
-                            className="hover:text-[#6D2C95] focus:text-[#6D2C95] text-[#333333] font-bold"
-                            onClick={() => window.scrollTo(0, 0)}
-                        >
-                            Symposia
-                        </Link>
-                        <Link
-                            to="/Gallery"
-                            className="hover:text-[#6D2C95] focus:text-[#6D2C95] text-[#333333] font-bold"
-                            onClick={() => window.scrollTo(0, 0)}
-                        >
-                            Gallery
-                        </Link>
-                        <Link
-                            to="/Team"
-                            className="hover:text-[#6D2C95] focus:text-[#6D2C95] text-[#333333] font-bold"
-                            onClick={() => window.scrollTo(0, 0)}
-                        >
-                            Team
-                        </Link>
-                    </div>
+const config = {
+  event: {
+    name: "RUSS 2025",
+    logo1: logo1,
+    logo2: logo2,
+  },
+  navigation: [
+    { name: "Home", href: "/" },
+    { name: "Program", href: "/program" },
+    { name: "Author Instructions", href: "/author-instructions" },
+    { name: "Team", href: "/team" },
+  ],
+  callToAction: { text: "Downloads", href: "/downloads" },
+};
+
+const Menu = () => {
+  const { navigation, callToAction, event } = config;
+
+  const path = useLocation();
+
+  const isActive = (href) => {
+    return path.pathname == href ? "text-[#6D2C95]" : "text-gray-500";
+  };
+
+  return (
+    <>
+      <Popover>
+        <div className="relative bg-white w-screen py-2 px-4 sm:px-6 lg:px-8">
+          <nav
+            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            aria-label="Global"
+          >
+            <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div className="flex items-center justify-between w-full md:w-auto">
+                <a href="/" className="flex flex-row items-center">
+                  <img alt="logo" className="w-11 h-auto" src={event.logo1} />
+                  <img alt="logo" className="w-16 h-auto" src={event.logo2} />
+                </a>
+                <div className="-mr-2 flex items-center md:hidden">
+                  <PopoverButton
+                    className={`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-[#6D2C95] hover:underline hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#6D2C95]`}
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                  </PopoverButton>
                 </div>
-            </nav>
-            <Dialog
-                className="lg:hidden"
-                open={mobileMenuOpen}
-                onClose={setMobileMenuOpen}
-            >
-                <div className="fixed inset-0 z-50 top-0"/>
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-1/2 md:w-1/4 bg-[#1A1919]">
-                    <div className="flex items-center justify-between">
-                        <button
-                            type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            <span className="sr-only">Close menu</span>
-                            <XMarkIcon
-                                className="h-6 w-6 text-slate-400 hover:text-[#6D2C95]"
-                                aria-hidden="true"
-                            />
-                        </button>
-                    </div>
-                    <div className="mt-6 flow-root">
-                        <div className="space-y-2 py-6 flex flex-col">
-                            <Link
-                                to="/"
-                                className="mx-2 mb-1 text-center hover:text-[#6D2C95] focus:text-[#6D2C95]
-                                text-slate-400 font-bold"
-                                onClick={() => {
-                                    window.scrollTo(0, 0);
-                                    iconClickEvent();
-                                }}
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                to="/Symposia"
-                                className="mx-2 mb-1 text-center hover:text-[#6D2C95] focus:text-[#6D2C95]
-                                text-slate-400 font-bold"
-                                onClick={() => {
-                                    window.scrollTo(0, 0);
-                                    iconClickEvent();
-                                }}
-                            >
-                                Symposia
-                            </Link>
-                            <Link
-                                to="/Gallery"
-                                className="mx-2 mb-1 text-center hover:text-[#6D2C95] focus:text-[#6D2C95]
-                                text-slate-400 font-bold"
-                                onClick={() => {
-                                    window.scrollTo(0, 0);
-                                    iconClickEvent();
-                                }}
-                            >
-                                Gallery
-                            </Link>
-                            <Link
-                                to="/Team"
-                                className="mx-2 mb-1 text-center hover:text-[#6D2C95] focus:text-[#6D2C95]
-                                text-slate-400 font-bold"
-                                onClick={() => {
-                                    window.scrollTo(0, 0);
-                                    iconClickEvent();
-                                }}
-                            >
-                                Team
-                            </Link>
-                        </div>
-                    </div>
-                </DialogPanel>
-            </Dialog>
+              </div>
+            </div>
+            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              {navigation.map((item) => (
+                <Link
+                  id="nav-links"
+                  key={item.name}
+                  to={item.href}
+                  className={
+                    isActive(item.href) +
+                    " font-medium hover:text-[#6D2C95] hover:underline"
+                  }
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <a
+                href={callToAction.href}
+                className={
+                  isActive("/downloads") +
+                  ` font-medium bg-[#6D2C95] p-2 rounded-lg text-white hover:underline`
+                }
+              >
+                {callToAction.text}
+              </a>
+            </div>
+          </nav>
         </div>
-    );
-}
+
+        <Transition
+          as={Fragment}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="duration-100 ease-in"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
+          <PopoverPanel
+            focus
+            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          >
+            <div
+              className={`rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden`}
+            >
+              <div className="px-5 pt-4 flex items-center justify-between">
+                <a href="/" className="flex flex-row items-center">
+                  <img alt="logo" className="w-11 h-auto" src={event.logo1} />
+                  <img alt="logo" className="w-16 h-auto" src={event.logo2} />
+                </a>
+                <div className="-mr-2">
+                  <PopoverButton
+                    className={`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-[#6D2C95] hover:underline hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#6D2C95]`}
+                  >
+                    <span className="sr-only">Close main menu</span>
+                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                  </PopoverButton>
+                </div>
+              </div>
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#6d2c95] hover:bg-gray-50"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <a
+                href={callToAction.href}
+                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+              >
+                {callToAction.text}
+              </a>
+            </div>
+          </PopoverPanel>
+        </Transition>
+      </Popover>
+    </>
+  );
+};
+
+export default Menu;

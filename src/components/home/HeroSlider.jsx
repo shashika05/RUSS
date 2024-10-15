@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 
 import { IoIosArrowForward } from "react-icons/io";
+import { SlCalender } from "react-icons/sl";
+import { IoLocationOutline } from "react-icons/io5";
 
 import img1 from "../../assets/hero-bg-1.jpg";
 import img2 from "../../assets/hero-bg-2.jpg";
@@ -10,7 +12,7 @@ import img4 from "../../assets/hero-bg-4.jpg";
 const HeroSlider = () => {
   const slides = [
     {
-      image: img1, // replace with your image paths
+      image: img1,
     },
     {
       image: img2,
@@ -21,7 +23,6 @@ const HeroSlider = () => {
     {
       image: img4,
     },
-    // Add more slides as needed
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,14 +63,23 @@ const HeroSlider = () => {
         <div className="flex flex-col absolute inset-0 bg-black bg-opacity-40 px-4 md:px-8 md:justify-between">
           <div className="flex flex-col justify-center items-center text-white text-center md:mt-20 mt-10 ">
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl uppercase  mb-4">
-              Ruhuna Science <br />
-              <span className="block mt-4">Research Circle</span>
+              1<sup>st</sup> Ruhuna Undergraduate <br />
+              <span className="block mt-4">Science Symposium</span>
             </h1>
             <p className="my-4 w-full md:w-[30%] text-lg">
-              A nonprofit organization with a strong research base across a
-              spectrum of academic disciplines engaging in research at national
-              and international levels.
+              "Researches for shaping the future""
             </p>
+
+            <div className="flex flex-row items-center">
+              <SlCalender /> <p className="ml-2"> Date: 21st January 2025</p>
+            </div>
+            <div className="flex flex-row items-center">
+              <IoLocationOutline />{" "}
+              <p className="ml-2">
+                {" "}
+                Location: Faculty of Science, University of Ruhuna
+              </p>
+            </div>
             <a
               href="/contact-us"
               className="bg-buttonbg flex items-center gap-1 hover:gap-4 uppercase text-white hover:text-black py-2 px-8 rounded-lg hover:bg-buttonhover transition-all duration-300 mt-4"
