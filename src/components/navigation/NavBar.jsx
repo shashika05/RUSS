@@ -9,19 +9,22 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link, useLocation } from "react-router-dom";
 
+import logo1 from "../../assets/logo-only.png";
+import logo2 from "../../assets/logo-text-only.png";
+
 const config = {
   event: {
     name: "RUSS 2025",
-    logo1: "/src/assets/logo-only.png",
-    logo2: "/src/assets/logo-text-only.png",
+    logo1: logo1,
+    logo2: logo2,
   },
   navigation: [
     { name: "Home", href: "/" },
-    { name: "Symposium", href: "/symposium" },
+    { name: "Program", href: "/program" },
     { name: "Author Instructions", href: "/author-instructions" },
     { name: "Team", href: "/team" },
   ],
-  callToAction: { text: "Register", href: "#" },
+  callToAction: { text: "Downloads", href: "/downloads" },
 };
 
 const Menu = () => {
@@ -35,16 +38,6 @@ const Menu = () => {
 
   return (
     <>
-      <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2`}
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
-
       <Popover>
         <div className="relative bg-white w-screen py-2 px-4 sm:px-6 lg:px-8">
           <nav
@@ -82,8 +75,11 @@ const Menu = () => {
                 </Link>
               ))}
               <a
-                href="#"
-                className={`font-medium bg-slate-300 p-2 rounded-lg text-primary hover:text-[#6D2C95] hover:underline`}
+                href={callToAction.href}
+                className={
+                  isActive("/downloads") +
+                  ` font-medium bg-[#6D2C95] p-2 rounded-lg text-white hover:underline`
+                }
               >
                 {callToAction.text}
               </a>

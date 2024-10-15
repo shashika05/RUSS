@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
+// import authorInstructions from "../../assets/files/Author_Instructions_RUSS2025.docx";
+
 const Instructions = () => {
   const [openSection, setOpenSection] = useState(null);
 
@@ -10,7 +12,7 @@ const Instructions = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold text-center mb-6">
+      <h1 className="text-4xl font-bold text-center mb-6">
         Instructions to Authors
       </h1>
 
@@ -233,6 +235,13 @@ const Instructions = () => {
 
       {/* Submission Email */}
       <div className="text-center mt-6">
+        <a
+          href="/assets/files/Author_Instructions_RUSS2025.docx"
+          className="text-sm text-[#6d2c95] hover:underline"
+          download
+        >
+          Download author instructions
+        </a>
         <p className="text-sm text-gray-500">
           Email for submissions:{" "}
           <a

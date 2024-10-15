@@ -4,11 +4,13 @@ import ScrollToTop from "react-scroll-to-top";
 import Footer from "./components/footer/Footer.jsx";
 import NavBar from "./components/navigation/NavBar.jsx";
 
+//Pages
 import Home from "./components/home/Home.jsx";
-import Symposium from "./components/symposium/Symposium.jsx";
 import Instructions from "./components/authInstructions/Instructions.jsx";
 import Team from "./components/team/Team.jsx";
 import NotFound from "./components/notfound/NotFound.jsx";
+import Downloads from "./components/downloads/Downloads.jsx";
+import Program from "./components/program/Program.jsx";
 
 function App() {
   return (
@@ -19,9 +21,10 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/symposium" element={<Symposium />} />
+          <Route path="/program" element={<Program />} />
           <Route path="/author-instructions" element={<Instructions />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/downloads" element={<Downloads />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -7,11 +7,11 @@ import logo from "../../assets/logo-only.png";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="mt-4">
       <div className="flex justify-center">
         <hr className="w-5/6 h-[3px] bg-[#6D2C95]" />
       </div>
-      <div className="w-full h-auto md:flex m-6">
+      <div className="w-full h-auto md:flex mx-2 mt-2">
         <div className="md:w-1/2">
           <div className="w-auto h-auto flex flex-col items-center">
             <div className="flex gap-1">
@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-2 my-5 text-[#333333]">
               <div>
-                <p className="text-sm">
+                <p className="text-sm ml-6">
                   Please send us your ideas or suggestions! Any feedback would
                   be appreciated.
                 </p>
@@ -74,8 +74,8 @@ export default function Footer() {
             <div className="flex flex-col gap-1 text-sm">
               <h3 className="font-bold mb-2">Quick Links</h3>
               <a href="">Home</a>
-              <a href="">Past Symposia</a>
-              <a href="">Other Projects</a>
+              <a href="">Symposium</a>
+              <a href="/team#contact-info">Contact Us</a>
               <a href="">Meet The Team</a>
             </div>
           </div>

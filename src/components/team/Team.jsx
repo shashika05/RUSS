@@ -1,6 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Keyboard, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import { FaUserLarge } from "react-icons/fa6";
 import { IoIosCall, IoIosMail } from "react-icons/io";
@@ -131,7 +134,7 @@ const Team = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4 text-center">Meet the Team</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">Meet the Team</h1>
 
       {/* Committee Members Section */}
       <section className="mb-8">
@@ -142,7 +145,16 @@ const Team = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
+            900: { slidesPerView: 4 },
           }}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
           scrollbar={{ draggable: true }}
         >
           {renderCards(committeeMembers)}
@@ -158,7 +170,17 @@ const Team = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
+            900: { slidesPerView: 4 },
           }}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          scrollbar={{ draggable: true }}
         >
           {renderCards(advisoryBoard)}
         </Swiper>
@@ -173,14 +195,24 @@ const Team = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
+            900: { slidesPerView: 4 },
           }}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          scrollbar={{ draggable: true }}
         >
           {renderCards(editorialBoard)}
         </Swiper>
       </section>
 
       {/* Contact Details Section */}
-      <section className="mb-8">
+      <section id="contact-info" className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Contact Details</h2>
         <Swiper
           spaceBetween={10}
@@ -188,7 +220,17 @@ const Team = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
+            900: { slidesPerView: 4 },
           }}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          scrollbar={{ draggable: true }}
         >
           {renderCards(contactDetails)}
         </Swiper>
