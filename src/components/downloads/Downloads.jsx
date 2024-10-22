@@ -10,27 +10,27 @@ const Downloads = () => {
   const documents = [
     {
       name: "Abstract Template",
-      link: "/assets/files/Abstract_template_RUSS25.docx",
+      link: "/conference/RUSS2025/assets/files/Abstract_template_RUSS25.docx",
     },
     {
       name: "Author Declaration Form",
-      link: "/assets/files/Author_declaration_form_RUSS2025.docx",
+      link: "/conference/RUSS2025/assets/files/Author_declaration_form_RUSS2025.docx",
     },
     {
       name: "Author Information Form",
-      link: "/assets/files/Author_Information_form_RUSS25.docx",
+      link: "/conference/RUSS2025/assets/files/Author_Information_form_RUSS25.docx",
     },
     {
       name: "Author Instructions",
-      link: "/assets/files/Author_Instructions_RUSS2025.docx",
+      link: "/conference/RUSS2025/assets/files/Author_Instructions_RUSS2025.docx",
     },
     {
       name: "Event Flyer",
-      link: "/assets/files/ristcon_2025.pdf",
+      link: "/conference/RUSS2025/assets/files/ristcon_2025.pdf",
     },
     {
       name: "Registration Form",
-      link: "/assets/files/Registration_form_RUSS2025.docx",
+      link: "/conference/RUSS2025/assets/files/Registration_form_RUSS2025.docx",
     },
   ];
   const onDownloadClick = (e, link) => {

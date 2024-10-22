@@ -241,7 +241,7 @@ const Instructions = () => {
         {/* Submission Email */}
         <div className="text-center mt-6">
           <a
-            href="/assets/files/Author_Instructions_RUSS2025.docx"
+            href="/conference/RUSS2025/assets/files/Author_Instructions_RUSS2025.docx"
             className="text-sm text-[#6d2c95] hover:underline"
             download
           >
