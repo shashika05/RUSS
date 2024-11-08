@@ -27,22 +27,66 @@ const Timeline = () => {
         }}
         items={[
           {
-            cardTitle: "12th November 2024",
+            cardTitle: (
+              <p>
+                12<sup>th</sup> November 2024
+              </p>
+            ),
             title: "Deadline for Submission of Abstracts",
-            cardSubtitle: `Abstracts must be submitted by 12th November 2024`,
-            cardDetailedText: `The deadline for submission of abstracts is 12th November 2024. Abstracts must be submitted by this date to be considered for the symposium.`,
+            cardSubtitle: (
+              <p>
+                Abstracts must be submitted by 12<sup>th</sup> November 2024
+              </p>
+            ),
+            cardDetailedText: (
+              <p>
+                The deadline for submission of abstracts is 12<sup>th</sup>{" "}
+                November 2024. Abstracts must be submitted by this date to be
+                considered for the symposium.
+              </p>
+            ),
           },
           {
-            cardTitle: "12th December 2024",
+            cardTitle: (
+              <p>
+                12<sup>th</sup> December 2024
+              </p>
+            ),
             title: "Notification of Acceptance",
-            cardSubtitle: `Authors will be notified of acceptance by 12th December 2024`,
-            cardDetailedText: `Authors will be notified of acceptance by 12th December 2024. Authors whose abstracts are accepted will be invited to submit full papers for the symposium.`,
+            cardSubtitle: (
+              <p>
+                Authors will be notified of acceptance by 12<sup>th</sup>{" "}
+                December 2024
+              </p>
+            ),
+            cardDetailedText: (
+              <p>
+                Authors will be notified of acceptance by 12<sup>th</sup>{" "}
+                December 2024. Authors whose abstracts are accepted will be
+                invited to submit full papers for the symposium.
+              </p>
+            ),
           },
           {
-            cardTitle: "23rd January 2025",
+            cardTitle: (
+              <p>
+                23<sup>rd</sup> January 2025
+              </p>
+            ),
             title: "Conference Date",
-            cardSubtitle: `The conference will be held on 23rd January 2025`,
-            cardDetailedText: `The conference will be held on 23rd January 2025 at the Faculty of Science, University of Ruhuna. The conference will feature presentations by undergraduate researchers from a variety of disciplines.`,
+            cardSubtitle: (
+              <p>
+                The conference will be held on 23<sup>rd</sup> January 2025
+              </p>
+            ),
+            cardDetailedText: (
+              <p>
+                The conference will be held on 23<sup>rd</sup> January 2025 at
+                the Faculty of Science, University of Ruhuna. The conference
+                will feature presentations by undergraduate researchers from a
+                variety of disciplines.
+              </p>
+            ),
           },
         ]}
       />

@@ -17,7 +17,9 @@ const Program = () => {
           <p className="mt-4 text-lg italic">
             "Researches for Shaping the Future"
           </p>
-          <p className="mt-2 text-lg">23rd January 2025</p>
+          <p className="mt-2 text-lg">
+            23<sup>rd</sup> January 2025
+          </p>
         </header>
       </LazyShow>
 
@@ -33,15 +35,21 @@ const Program = () => {
           <div className="bg-yellow-100 shadow-md rounded-lg p-6 w-full max-w-3xl mx-auto">
             <p className="text-lg font-semibold">
               Deadline for Submission of Abstracts:{" "}
-              <span className="font-bold">12th November 2024</span>
+              <span className="font-bold">
+                12<sup>th</sup> November 2024
+              </span>
             </p>
             <p className="mt-2 text-lg">
               Notification of Acceptance:{" "}
-              <span className="font-bold">12th December 2024</span>
+              <span className="font-bold">
+                12<sup>th</sup> December 2024
+              </span>
             </p>
             <p className="mt-2 text-lg">
               Conference Date:{" "}
-              <span className="font-bold">23rd January 2025</span>
+              <span className="font-bold">
+                23<sup>rd</sup> January 2025
+              </span>
             </p>
           </div>
         </section>
@@ -90,7 +98,7 @@ const Program = () => {
           <p className="text-lg mb-6">
             Papers must be submitted to{" "}
             <span className="font-bold text-indigo-600">
-              russ2025@ruh.ac.lk
+              russ2025@sci.ruh.ac.lk
             </span>
           </p>
           <div className="bg-yellow-100 shadow-md rounded-lg p-6 w-full max-w-3xl mx-auto">

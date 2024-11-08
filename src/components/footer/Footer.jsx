@@ -34,14 +34,14 @@ export default function Footer() {
                   be appreciated.
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="ml-8 flex items-center">
                 <MdLocationPin className="text-2xl" />
                 <p className="text-sm ml-1">
                   Faculty of Science, University of Ruhuna, Matara, Srilanka
                   81000
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="ml-8 flex items-center">
                 <MdOutlineMail className="text-2xl" />
                 <a
                   target="_blank"
@@ -52,7 +52,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex gap-4 mb-4">
+            {/* <div className="flex gap-4 mb-4">
               <a
                 target="_blank"
                 href="https://www.youtube.com/c/RuhunaScienceResearchCircle"
@@ -68,7 +68,7 @@ export default function Footer() {
               <a target="_blank" href="https://www.linkedin.com/company/RUSS">
                 <FiLinkedin className="text-2xl" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="md:w-1/2 mr-4 flex md:border-l-[3px] md:border-[#6D2C95] text-[#333333]">

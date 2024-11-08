@@ -72,7 +72,11 @@ const HeroSlider = () => {
             </p>
 
             <div className="flex flex-row items-center">
-              <SlCalender /> <p className="ml-2"> Date: 23st January 2025</p>
+              <SlCalender />{" "}
+              <p className="ml-2">
+                {" "}
+                Date: 23<sup>rd</sup> January 2025
+              </p>
             </div>
             <div className="flex flex-row">
               <IoLocationOutline className="mt-1" />{" "}
