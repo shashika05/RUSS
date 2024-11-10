@@ -18,9 +18,10 @@ const Brick = () => {
               status === "allocated" ? "bg-[#6D2C95]" : "bg-gray-500"
             }`}
           >
-            Brick {index + 1}
+            {/* Brick {index + 1} */}
+            {status == "allocated" ? "Name of Sponsor" : "Available"}
             <div className="text-xs mt-2">
-              {status === "allocated" ? "Allocated Sponsor" : "Available"}
+              {status === "allocated" ? "Allocated" : ""}
             </div>
           </div>
         ))}
