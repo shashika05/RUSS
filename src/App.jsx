@@ -11,6 +11,7 @@ import Team from "./components/team/Team.jsx";
 import NotFound from "./components/notfound/NotFound.jsx";
 import Downloads from "./components/downloads/Downloads.jsx";
 import Program from "./components/program/Program.jsx";
+import Sponsor from "./components/sponser/Sponser.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/author-instructions" element={<Instructions />} />
           <Route path="/team" element={<Team />} />
           <Route path="/downloads" element={<Downloads />} />
+          <Route path="/sponsors" element={<Sponsor />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

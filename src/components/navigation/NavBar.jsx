@@ -85,6 +85,16 @@ const Menu = () => {
               >
                 {callToAction.name}
               </Link>
+              <Link
+                id="nav-links"
+                to="/sponsors"
+                className={
+                  isActive(callToAction.href) +
+                  " hover:underline bg-[#6D2C95] text-white px-3 py-2 rounded-md text-sm font-medium"
+                }
+              >
+                Sponsors
+              </Link>
             </div>
           </nav>
         </div>
@@ -133,9 +143,15 @@ const Menu = () => {
               <Link
                 key={callToAction.name}
                 to={callToAction.href}
-                className="block px-3 py-2 bg-[#6d2c95] rounded-b-md text-center font-medium text-white hover:bg-[#6d2c95]/80"
+                className="block px-3 py-2 bg-[#6d2c95] text-center font-medium text-white hover:bg-[#6d2c95]/80"
               >
                 {callToAction.name}
+              </Link>
+              <Link
+                to="/sponsors"
+                className="block px-3 py-2 bg-[#6d2c95]/60 rounded-b-md text-center font-medium text-white hover:bg-[#6d2c95]/80"
+              >
+                Sponsors
               </Link>
             </div>
           </PopoverPanel>

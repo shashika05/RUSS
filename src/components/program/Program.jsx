@@ -3,6 +3,8 @@ import { IoIosCall } from "react-icons/io";
 
 import LazyShow from "../animations/LazyShow";
 
+import Speakers from "../Speakers";
+
 const Program = () => {
   document.title = "RUSS 2025 | Programme";
   window.scrollTo(0, 0);
@@ -12,7 +14,7 @@ const Program = () => {
       <LazyShow>
         <header className="bg-purple-600 py-12 text-center text-white">
           <h1 className="text-4xl font-bold uppercase">
-            1st Ruhuna Undergraduate Science Symposium 2025
+            1<sup>st</sup> Ruhuna Undergraduate Science Symposium 2025
           </h1>
           <p className="mt-4 text-lg italic">
             "Researches for Shaping the Future"
@@ -36,7 +38,7 @@ const Program = () => {
             <p className="text-lg font-semibold">
               Deadline for Submission of Abstracts:{" "}
               <span className="font-bold">
-                12<sup>th</sup> November 2024
+                17<sup>th</sup> November 2024
               </span>
             </p>
             <p className="mt-2 text-lg">
@@ -53,6 +55,11 @@ const Program = () => {
             </p>
           </div>
         </section>
+      </LazyShow>
+
+      {/* Speakers Section */}
+      <LazyShow>
+        <Speakers />
       </LazyShow>
 
       {/* Key Areas Section */}

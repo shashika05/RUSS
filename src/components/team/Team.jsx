@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 
 import { FaUserLarge } from "react-icons/fa6";
 import { IoIosCall, IoIosMail } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 
 //animations
 import LazyShow from "../animations/LazyShow";
@@ -105,6 +106,38 @@ const Team = () => {
       mobile: "+94 (76) 209 5652",
     },
   ];
+  const webDev = [
+    {
+      name: "Thanuja Priyadarshane",
+      department: "Department of Computer Science",
+      github: "thanujaDev26",
+    },
+    {
+      name: "Isuru Shanaka",
+      department: "Department of Computer Science",
+      github: "IsuruSH",
+    },
+    {
+      name: "Janith Ranasinghe",
+      department: "Department of Computer Science",
+      github: "JanithR-creator",
+    },
+    {
+      name: "Chamal Achintha",
+      department: "Department of Computer Science",
+      github: "Chamal9979",
+    },
+    {
+      name: "Kushan Sandul",
+      department: "Department of Computer Science",
+      github: "KushanS20",
+    },
+    {
+      name: "Shashika Raveen",
+      department: "Department of Computer Science",
+      github: "shashika05",
+    },
+  ];
 
   const renderCards = (data) =>
     data.map((item, index) => (
@@ -129,6 +162,18 @@ const Team = () => {
               <IoIosMail />
               <a className="hover:text-[#6D2C95]" href={"mailto:" + item.email}>
                 {item.email}
+              </a>
+            </div>
+          )}
+          {item.github && (
+            <div className="flex flex-row items-center">
+              <FaGithub />
+              <a
+                className="hover:text-[#6D2C95]"
+                target="_blank"
+                href={"https://github.com/" + item.github}
+              >
+                {item.github}
               </a>
             </div>
           )}
@@ -244,6 +289,33 @@ const Team = () => {
             scrollbar={{ draggable: true }}
           >
             {renderCards(contactDetails)}
+          </Swiper>
+        </section>
+      </LazyShow>
+
+      {/* Web Development Team Section */}
+      <LazyShow>
+        <section id="web-div-info" className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Web Development Team</h2>
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Keyboard, Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+          >
+            {renderCards(webDev)}
           </Swiper>
         </section>
       </LazyShow>

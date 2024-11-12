@@ -29,18 +29,18 @@ const Timeline = () => {
           {
             cardTitle: (
               <p>
-                12<sup>th</sup> November 2024
+                18<sup>th</sup> November 2024
               </p>
             ),
             title: "Deadline for Submission of Abstracts",
             cardSubtitle: (
               <p>
-                Abstracts must be submitted by 12<sup>th</sup> November 2024
+                Abstracts must be submitted by 18<sup>th</sup> November 2024
               </p>
             ),
             cardDetailedText: (
               <p>
-                The deadline for submission of abstracts is 12<sup>th</sup>{" "}
+                The deadline for submission of abstracts is 18<sup>th</sup>{" "}
                 November 2024. Abstracts must be submitted by this date to be
                 considered for the symposium.
               </p>

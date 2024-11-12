@@ -6,7 +6,7 @@ import Timeline from "./TimeLine";
 
 //Animations
 import LazyShow from "../animations/LazyShow";
-import Brick from "../sponsor-brick/Brick";
+import Speakers from "../Speakers";
 
 export default function Home() {
   document.title = "RUSS 2025 | Home";
@@ -18,11 +18,11 @@ export default function Home() {
         <PastSymp />
       </LazyShow>
       <LazyShow>
+        <Speakers />
+      </LazyShow>
+      <LazyShow>
         <Timeline />
       </LazyShow>
-      {/* <LazyShow>
-        <Brick />
-      </LazyShow> */}
     </div>
   );
 }
