@@ -26,7 +26,7 @@ const Downloads = () => {
     },
     {
       name: "Event Flyer",
-      link: "/conference/RUSS2025/assets/files/ristcon_2025.pdf",
+      link: "/conference/RUSS2025/assets/files/flyer.jpeg",
     },
     {
       name: "Registration Form",
