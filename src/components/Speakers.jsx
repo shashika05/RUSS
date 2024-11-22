@@ -56,7 +56,7 @@ const Speakers = () => {
           imgSrc={speaker2}
           imgAlt="Prof. Inoka C. Perera"
           speakerType="Plenary Speaker"
-          speakerName="Prof. W. A. Priyanka P. De Silva"
+          speakerName="Prof. Inoka C. Perera"
           profession="Department of Zoology & Environmental Sciences"
           organization="Faculty of Science"
           location="University of Colombo"
