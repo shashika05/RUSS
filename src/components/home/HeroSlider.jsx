@@ -67,8 +67,8 @@ const HeroSlider = () => {
               1<sup>st</sup> Ruhuna Undergraduate <br />
               <span className="block mt-4">Science Symposium</span>
             </h1>
-            <p className="my-4 w-full md:w-[30%] text-lg">
-              "Researches for shaping the future"
+            <p className="my-4 w-full md:w-[30%] text-xl">
+              &quot;Research for shaping the future&quot;
             </p>
 
             <div className="flex flex-row items-center">
@@ -89,7 +89,7 @@ const HeroSlider = () => {
               to="/programme"
               className="bg-buttonbg flex items-center gap-1 hover:gap-4 uppercase text-white hover:text-black py-2 px-8 rounded-lg hover:bg-buttonhover transition-all duration-300 mt-4"
             >
-              Calling For Abstracts
+              More About Symposium
               <IoIosArrowForward className="text-button-text text-xl  " />
             </Link>
           </div>

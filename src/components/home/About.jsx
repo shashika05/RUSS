@@ -18,12 +18,6 @@ const About = () => {
           innovations, practical challenges encountered and the solutions
           adopted in the fields of Science & Technology.
         </p>
-        <Link
-          to="/programme"
-          className="bg-buttonbg w-fit mx-auto flex items-center gap-1 hover:gap-4 uppercase text-white hover:text-black py-2 px-8 rounded-lg hover:bg-buttonhover transition-all duration-300 mt-4"
-        >
-          More About Symposium
-        </Link>
         <div className="flex flex-row gap-4 md:gap-10 mt-6 mb-24">
           <div className=" w-full h-full ">
             <img

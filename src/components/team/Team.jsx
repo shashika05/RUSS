@@ -1,11 +1,9 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { FaUserLarge } from "react-icons/fa6";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 
@@ -143,7 +141,6 @@ const Team = () => {
     data.map((item, index) => (
       <SwiperSlide key={index} className="flex justify-center m-2">
         <div className="flex flex-col bg-gray-100 h-64 w-64 shadow-md p-4 items-center justify-center rounded-xl max-w-xs text-center">
-          <FaUserLarge color="#6D2C95" size={128} />
           <h3 className="font-semibold text-lg">{item.role || item.name}</h3>
           <p className="text-gray-600">{item.role == null ? "" : item.name}</p>
           {item.department && (

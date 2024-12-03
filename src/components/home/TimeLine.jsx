@@ -10,7 +10,7 @@ const Timeline = () => {
         mode="VERTICAL_ALTERNATING"
         enableOutline
         disableToolbar
-        activeItemIndex={0}
+        activeItemIndex={1}
         disableClickOnCircle
         useReadMore={false}
         theme={{
@@ -28,19 +28,23 @@ const Timeline = () => {
         items={[
           {
             cardTitle: (
-              <p>
-                18<sup>th</sup> November 2024
+              <p className="line-through">
+                30<sup>th</sup> November 2024
               </p>
             ),
-            title: "Deadline for Submission of Abstracts",
+            title: (
+              <p className="line-through">
+                Deadline for Submission of Abstracts
+              </p>
+            ),
             cardSubtitle: (
-              <p>
-                Abstracts must be submitted by 18<sup>th</sup> November 2024
+              <p className="line-through">
+                Abstracts must be submitted by 30<sup>th</sup> November 2024
               </p>
             ),
             cardDetailedText: (
-              <p>
-                The deadline for submission of abstracts is 18<sup>th</sup>{" "}
+              <p className="line-through">
+                The deadline for submission of abstracts is 30<sup>th</sup>{" "}
                 November 2024. Abstracts must be submitted by this date to be
                 considered for the symposium.
               </p>

@@ -1,4 +1,3 @@
-import React from "react";
 import { IoIosCall } from "react-icons/io";
 
 import LazyShow from "../animations/LazyShow";
@@ -17,7 +16,7 @@ const Program = () => {
             1<sup>st</sup> Ruhuna Undergraduate Science Symposium 2025
           </h1>
           <p className="mt-4 text-lg italic">
-            "Researches for Shaping the Future"
+            &quot;Researches for Shaping the Future&quot;
           </p>
           <p className="mt-2 text-lg">
             23<sup>rd</sup> January 2025
@@ -38,7 +37,7 @@ const Program = () => {
             <p className="text-lg font-semibold">
               Deadline for Submission of Abstracts:{" "}
               <span className="font-bold">
-                17<sup>th</sup> November 2024
+                30<sup>th</sup> November 2024
               </span>
             </p>
             <p className="mt-2 text-lg">
